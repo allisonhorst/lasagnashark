@@ -1,0 +1,31 @@
+---
+title: "and_vertebrates_vignette"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{and_vertebrates_vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(lasagnashark)
+library(tidyverse)
+```
+
+```{r}
+cutthroat <- and_vertebrates %>% 
+  filter(SPECIES == "ONCL")
+```
+
+```{r}
+ggplot(data = cutthroat, aes(x = LENGTH1, y = WEIGHT)) +
+  geom_point()
+```
+
