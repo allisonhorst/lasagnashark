@@ -11,5 +11,5 @@
 #'
 #' @examples
 about_me <-function(my_name, birth_year, fav_animal) {
-  print(paste0("Hello, my name is ", my_name, "! I was born in ", birth_year, " and my favorite animal is a ", fav_animal ))
+  print(paste0("Hello, my name is ", my_name, "! I was born in ", birth_year, " and my least favorite animal is a ", fav_animal ))
 }
